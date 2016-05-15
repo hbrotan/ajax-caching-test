@@ -26,8 +26,8 @@
                             <p ng-if="vm.cacheMethod === 'Once'" style="font-size:16px">Only one ajax call performed. Does not consider parameters.</p>
                             <p ng-if="vm.cacheMethod === 'Memoize'" style="font-size:16px">Two ajax calls performed, one per input parameter.</p>
                             <p ng-if="vm.cacheMethod === 'AngularCache'" style="font-size:16px">The actual HTTP call is cached. Code inside dataservice method will be executed.</p>                            
-                            <button class="btn btn-primary" ng-click="vm.click(1)">Get 1</button>&nbsp;                              
-                            <button class="btn btn-primary" ng-click="vm.click(2)">Get 2</button>
+                            <button class="btn btn-primary" ng-click="vm.click('foo')">Get foo</button>&nbsp;                              
+                            <button class="btn btn-primary" ng-click="vm.click('bar')">Get bar</button>
                         </div>
                     </div>
                     <div ng-if="vm.response.length" ng-cloak>Results:
