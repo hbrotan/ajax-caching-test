@@ -51,7 +51,7 @@
             
             function getData(id){     
                 return $q(function(resolve, reject) {                        
-                    $http.get("http://localhost:3000/" + id)
+                    $http.get(id)
                         .then(function(response){                        
                             resolve(response.data);
                         });
@@ -60,7 +60,7 @@
             
             function getDataWithCache(id){     
                 return $q(function(resolve, reject) {                        
-                    $http.get("http://localhost:3000/" + id, { cache:true})
+                    $http.get(id, { cache:true})
                         .then(function(response){                        
                             resolve(response.data);
                         });
