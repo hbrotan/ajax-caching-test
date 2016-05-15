@@ -7,6 +7,8 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.use('/', express.static(__dirname));
+
 app.get('/:id', function (req, res) {
   setTimeout(function(){
     res.json(req.params.id);    

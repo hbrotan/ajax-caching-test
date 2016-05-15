@@ -10,7 +10,7 @@
                     <div class="jumbotron" style="margin-top:5px;text-align:center;">
                         <h1>Testing cache</h1>    
                         <br>
-                        <p style="font-size:15px">Testing simple ways of caching ajax calls using Angular and Lodash.<br> Ajax calls has a 3 second delay. Cached response is instant.</p>
+                        <p style="font-size:16px">Testing simple ways of caching ajax calls using Angular and Lodash.<br> Ajax calls has a 3 second delay. Cached response is instant.</p>
                         <h3>Select cache method:</h3><br>             
                         <button class="btn btn-default" ng-click="vm.select('Once')" ng-class="{'btn-danger': vm.cacheMethod === 'Once'}">Once</button>&nbsp;                                                
                         <button class="btn btn-default" ng-click="vm.select('Memoize')" ng-class="{'btn-danger': vm.cacheMethod === 'Memoize'}">Memoize</button>&nbsp;                              
@@ -18,9 +18,9 @@
                         <br><br>
                         <div ng-if="vm.cacheMethod" ng-cloak>
                             <h3>{{vm.cacheMethod}}</h3>
-                            <p ng-if="vm.cacheMethod === 'Once'" style="font-size:15px">Only one ajax call performed. Does not consider parameters.</p>
-                            <p ng-if="vm.cacheMethod === 'Memoize'" style="font-size:15px">Two ajax calls performed, one per input parameter.</p>
-                            <p ng-if="vm.cacheMethod === 'AngularCache'" style="font-size:15px">The actual HTTP call is cached. Logic inside dataservice method will be executed.</p>                            
+                            <p ng-if="vm.cacheMethod === 'Once'" style="font-size:16px">Only one ajax call performed. Does not consider parameters.</p>
+                            <p ng-if="vm.cacheMethod === 'Memoize'" style="font-size:16px">Two ajax calls performed, one per input parameter.</p>
+                            <p ng-if="vm.cacheMethod === 'AngularCache'" style="font-size:16px">The actual HTTP call is cached. Logic inside dataservice method will be executed.</p>                            
                             <button class="btn btn-primary" ng-click="vm.click(1)">Get 1</button>&nbsp;                              
                             <button class="btn btn-primary" ng-click="vm.click(2)">Get 2</button>
                         </div>
